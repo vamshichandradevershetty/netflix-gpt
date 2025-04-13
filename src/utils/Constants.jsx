@@ -4,9 +4,11 @@ export const netflix_logo="https://help.nflxext.com/helpcenter/OneTrust/oneTrust
 export const default_avtar = "https://occ-0-444-448.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABXz4LMjJFidX8MxhZ6qro8PBTjmHbxlaLAbk45W1DXbKsAIOwyHQPiMAuUnF1G24CLi7InJHK4Ge4jkXul1xIW49Dr5S7fc.png?r=e6e";
 
 export const api_options = {
-    method: 'GET',
+  method: 'GET',
   headers: {
     accept: 'application/json',
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZTk4OTMxOTVhNWVkOWI1MDFjN2YwODIwYmM2MDk1NiIsIm5iZiI6MTc0NDQ4NzA0OC43NjcsInN1YiI6IjY3ZmFjMjg4YTA0ZjUzMGI1Yzk5NjZjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jcvzv4mxQSY13K0kSYbpQ8mix6T9q1RAjGfhoOcpCvE'
   }
 };
+
+export const img_cdn_url = "https://image.tmdb.org/t/p/w400";
