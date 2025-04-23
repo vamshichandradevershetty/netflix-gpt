@@ -5,11 +5,15 @@ import {moviesReducer} from "./moviesSlice";
 import storage from 'redux-persist/lib/storage'; // defaults to localStorage
 import { combineReducers } from 'redux';
 */
+import GPTReducer from './GPTSlice';
+import configReducer from "./configSlice";
 
 export const appStore = configureStore({
         reducer: {
             user: userReducer,
             movies: moviesReducer,
+            gpt: GPTReducer,
+            config: configReducer,
         },
     }
 )

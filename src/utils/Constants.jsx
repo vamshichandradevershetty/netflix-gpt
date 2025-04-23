@@ -8,10 +8,16 @@ export const api_options = {
   headers: {
     accept: 'application/json',
    // Authorization: 
+   Authorization: 'Bearer'+ import.meta.env.VITE_TMDB_KEY,
   }
 };
-<<<<<<< HEAD
-
 export const img_cdn_url = "https://image.tmdb.org/t/p/w400";
-=======
->>>>>>> b6cc18252542cd7e849c6bfd342b765701b80091
+export const bg_img = "https://assets.nflxext.com/ffe/siteui/vlv3/98df3030-1c2b-4bd1-a2f5-13c611857edb/web/US-en-20250331-TRIFECTA-perspective_af0ac1e5-ee28-4f5b-be31-df183943d90f_small.jpg";
+
+export const SupportedLanguages = [
+  {identifier:"en",name:"English"},
+  {identifier:"hindi",name:"Hindi"},
+  {identifier:"french",name:"French"},
+];
+
+export const openAi_Key = import.meta.env.VITE_openAi_Key
