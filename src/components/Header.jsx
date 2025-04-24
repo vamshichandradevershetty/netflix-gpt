@@ -60,19 +60,19 @@ export const Header = () => {
 
 
     return (
-        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-                <img className="w-42"src={netflix_logo} alt="logo"/>
+        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+                <img className="w-42 mx-auto md:mx-0"src={netflix_logo} alt="logo"/>
           { user &&
-              <div className="flex p-3 m-3">
+              <div className="flex p-3 m-3 justify-between">
                 { showGPTSearch &&
-                <select className="p-3 m-3 bg-gray-500 text-white" onChange={handleLangChange}>
+                <select className="p-2 m-6 rounded-lg bg-gray-500 text-white" onChange={handleLangChange}>
                   {
                     SupportedLanguages.map((lang)=> <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)
                 }
                 </select>
-                }<button className="py-2 px-4 m-4 text-white rounded-lg bg-red-600" onClick={handleGPTSearchClick}>{showGPTSearch ? "Homepage": "GPT Search"}</button>
-              <img className="w-12 h-12" src={default_avtar}alt="user icon"/>
-              <button className="p-3 m-3 text-white my-4 bg-red-600 cursor-pointer font-bold" onClick={handleSignOut}>Sign Out</button>
+                }<button className=" p-2 m-6 text-white rounded-lg bg-red-600" onClick={handleGPTSearchClick}>{showGPTSearch ? "Homepage": "GPT Search"}</button>
+              <img className="hidden md:block w-12 h-12" src={default_avtar}alt="user icon"/>
+              <button className="p-2 m-6 rounded-lg text-white my-4 bg-red-600 cursor-pointer font-bold" onClick={handleSignOut}>Sign Out</button>
             </div>
        }
         </div>

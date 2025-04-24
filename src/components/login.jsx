@@ -76,10 +76,10 @@ export const Login = () => {
     return (
         <div>
             <div>
-            <img className="absolute" src={bg_img} alt="bg img"/>
+            <img className="h-screen object-cover fixed md:absolute w-screen" src={bg_img} alt="bg img"/>
             </div>
                <Header/>
-                <form onSubmit={(e)=>e.preventDefault()} className="w-4/12 absolute my-36  mx-auto left-0 right-0 p-12 bg-black text-white rounded-lg bg-black/70">
+                <form onSubmit={(e)=>e.preventDefault()} className="w-8/10 h-8/10 md:w-4/12 absolute my-36  mx-auto left-0 right-0 p-10 bg-black text-white rounded-lg bg-black/70">
                     <h1 className="text-white font-bold py-3 text-3xl">{isSignInForm?"Sign In": "Sign Up"}</h1>
                     {!isSignInForm && (<input ref={name} className=" p-2 my-3 w-full bg-gray-800" type="text"
                      placeholder="Enter Full Name">

@@ -8,7 +8,7 @@ export const api_options = {
   headers: {
     accept: 'application/json',
    // Authorization: 
-   Authorization: 'Bearer'+ import.meta.env.VITE_TMDB_KEY,
+   Authorization: 'Bearer'+import.meta.env.VITE_TMDB_KEY  
   }
 };
 export const img_cdn_url = "https://image.tmdb.org/t/p/w400";
